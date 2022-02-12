@@ -2,6 +2,7 @@ To demonstrate: https://github.com/sonatype/ossindex-maven/issues/66
 The cache expiry is being set to just 10 seconds to suppress querying the local directory cache.  This is in order to illustrate the issue.
 
 $ cd module1
+
 $ mvn validate -Dossindex.cache.expiration=PT10S -X | tee log.txt
 
 Relevant bits in debug output:
